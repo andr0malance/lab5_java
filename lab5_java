@@ -1,0 +1,17 @@
+package com.company;import java.util.Scanner;public class Main {
+
+    public int calculateResult1(int x) {
+        return 3*x + 5;    }
+
+    public double calculateResult2(double a, double b) {
+        return (a + b) / (a - b);    }
+
+    public double calculateResult3(double a, double x, double b) {
+        return Math.pow(a*x/b, 1/2.0);    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);        
+Main calculator = new Main();        int result1 = calculator.calculateResult1(12);        System.out.println("Результат вычислений №1: " + result1);        
+double result2 = calculator.calculateResult2(3.4, 2.2);        System.out.println("Результат вычислений №2 " + result2);        
+double result3 = calculator.calculateResult3(1.0, 4.4, 3.14);        System.out.println("Результат вычислений №3" + result3);    }
+}
